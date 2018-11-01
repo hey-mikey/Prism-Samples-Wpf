@@ -1,12 +1,7 @@
-﻿namespace UsingEventAggregator.ViewModels
-{
-    using Prism.Mvvm;
+﻿using Prism.Mvvm;
 
-    /// <summary>
-    ///     Class MainWindowViewModel.
-    ///     Implements the <see cref="BindableBase" />
-    /// </summary>
-    /// <seealso cref="BindableBase" />
+namespace UsingEventAggregator.ViewModels
+{
     /// <summary>
     ///     Class MainWindowViewModel.
     ///     Implements the <see cref="BindableBase" />
@@ -17,17 +12,10 @@
         /// <summary>
         ///     The title
         /// </summary>
-        /// <summary>
-        ///     The title
-        /// </summary>
         private string _title = "Prism Unity Application";
 
         /// <summary>
-        ///     Title for the application
-        /// </summary>
-        /// <value>The title.</value>
-        /// <summary>
-        ///     Gets or sets the title.
+        ///     Gets or sets the title for the application.
         /// </summary>
         /// <value>The title.</value>
         public string Title
