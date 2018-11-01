@@ -1,16 +1,10 @@
-﻿namespace ModuleA.ViewModels
+﻿using Prism.Commands;
+using Prism.Events;
+using Prism.Mvvm;
+using UsingEventAggregator.Core;
+
+namespace ModuleA.ViewModels
 {
-    using Prism.Commands;
-    using Prism.Events;
-    using Prism.Mvvm;
-
-    using UsingEventAggregator.Core;
-
-    /// <summary>
-    ///     Class MessageViewModel.
-    ///     Implements the <see cref="BindableBase" />
-    /// </summary>
-    /// <seealso cref="BindableBase" />
     /// <summary>
     ///     Class MessageViewModel.
     ///     Implements the <see cref="BindableBase" />
@@ -21,14 +15,8 @@
         /// <summary>
         ///     The event aggregator interface
         /// </summary>
-        /// <summary>
-        ///     The ea
-        /// </summary>
         private readonly IEventAggregator _ea;
 
-        /// <summary>
-        ///     The message
-        /// </summary>
         /// <summary>
         ///     The message
         /// </summary>
@@ -45,9 +33,11 @@
         }
 
         /// <summary>
-        ///     Gets or sets the message.
+        ///     Gets the send message command.
         /// </summary>
-        /// <value>The message.</value>
+        /// <value>The send message command.</value>
+        public DelegateCommand SendMessageCommand { get; }
+
         /// <summary>
         ///     Gets or sets the message.
         /// </summary>
@@ -57,16 +47,6 @@
             get => _message;
             set => SetProperty(ref _message, value);
         }
-
-        /// <summary>
-        ///     Gets the send message command.
-        /// </summary>
-        /// <value>The send message command.</value>
-        /// <summary>
-        ///     Gets the send message command.
-        /// </summary>
-        /// <value>The send message command.</value>
-        public DelegateCommand SendMessageCommand { get; }
 
         /// <summary>
         ///     Sends the message.

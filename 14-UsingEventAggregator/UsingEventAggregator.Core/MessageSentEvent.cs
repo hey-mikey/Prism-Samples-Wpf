@@ -1,7 +1,7 @@
-﻿namespace UsingEventAggregator.Core
-{
-    using Prism.Events;
+﻿using Prism.Events;
 
+namespace UsingEventAggregator.Core
+{
     /// <summary>
     ///     Class MessageSentEvent.
     ///     Implements the <see cref="string" />

@@ -1,12 +1,10 @@
-﻿namespace ModuleB.ViewModels
+﻿using System.Collections.ObjectModel;
+using Prism.Events;
+using Prism.Mvvm;
+using UsingEventAggregator.Core;
+
+namespace ModuleB.ViewModels
 {
-    using System.Collections.ObjectModel;
-
-    using Prism.Events;
-    using Prism.Mvvm;
-
-    using UsingEventAggregator.Core;
-
     /// <summary>
     ///     Class MessageListViewModel.
     ///     Implements the <see cref="BindableBase" />
@@ -27,7 +25,7 @@
         /// <summary>
         ///     Initializes a new instance of the <see cref="MessageListViewModel" /> class.
         /// </summary>
-        /// <param name="ea">The ea.</param>
+        /// <param name="ea">The event aggregator interface.</param>
         public MessageListViewModel(IEventAggregator ea)
         {
             _ea = ea;
