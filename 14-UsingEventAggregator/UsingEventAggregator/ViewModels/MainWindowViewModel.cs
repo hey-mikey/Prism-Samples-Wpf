@@ -12,9 +12,6 @@ namespace UsingEventAggregator.ViewModels
         /// <summary>
         ///     The private field backing the public title property
         /// </summary>
-        /// <summary>
-        ///     The title
-        /// </summary>
         private string _title = "Prism Unity Application";
 
         /// <summary>
