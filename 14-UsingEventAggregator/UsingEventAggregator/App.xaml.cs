@@ -1,4 +1,6 @@
 ﻿using System.Windows;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
 using ModuleA;
 using ModuleB;
 using Prism.Ioc;
@@ -16,6 +18,15 @@ namespace UsingEventAggregator
     /// <seealso cref="PrismApplication" />
     public partial class App : PrismApplication
     {
+        /// <summary>
+        ///     Constructor for UsingEventAggregator App
+        ///     This GUID registration is for using the App Center's SDK
+        /// </summary>
+        public App()
+        {
+            AppCenter.Start("c8563d4d-e664-4f6f-baa5-c07e283439c8", typeof(Analytics));
+        }
+
         /// <summary>
         ///     Creates the shell or main window of the application.
         /// </summary>
