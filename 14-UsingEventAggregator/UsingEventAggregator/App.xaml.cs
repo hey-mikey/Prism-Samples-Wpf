@@ -1,17 +1,13 @@
-﻿namespace UsingEventAggregator
+﻿using System.Windows;
+using ModuleA;
+using ModuleB;
+using Prism.Ioc;
+using Prism.Modularity;
+using Prism.Unity;
+using UsingEventAggregator.Views;
+
+namespace UsingEventAggregator
 {
-    using System.Windows;
-
-    using ModuleA;
-
-    using ModuleB;
-
-    using Prism.Ioc;
-    using Prism.Modularity;
-    using Prism.Unity;
-
-    using Views;
-
     /// <summary>
     ///     Interaction logic for App.xaml
     ///     Class App.

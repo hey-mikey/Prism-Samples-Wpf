@@ -1,11 +1,10 @@
-﻿namespace ModuleA
+﻿using ModuleA.Views;
+using Prism.Ioc;
+using Prism.Modularity;
+using Prism.Regions;
+
+namespace ModuleA
 {
-    using Prism.Ioc;
-    using Prism.Modularity;
-    using Prism.Regions;
-
-    using Views;
-
     /// <summary>
     ///     Class ModuleAModule.
     ///     Implements the <see cref="IModule" />

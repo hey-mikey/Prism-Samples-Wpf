@@ -1,7 +1,7 @@
-﻿namespace ModuleA.Views
-{
-    using System.Windows.Controls;
+﻿using System.Windows.Controls;
 
+namespace ModuleA.Views
+{
     /// <summary>
     ///     Interaction logic for ViewA
     ///     Implements the <see cref="UserControl" />
